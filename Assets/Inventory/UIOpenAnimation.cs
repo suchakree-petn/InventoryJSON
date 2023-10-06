@@ -12,7 +12,7 @@ public class UIOpenAnimation : MonoBehaviour
     void Start()
     {
         Vector2 vector2 = new Vector2(960,540);
-        transform.DOMove(vector2, fadeDuration);
+        transform.DOMove(vector2, fadeDuration).SetEase(Ease.OutBounce);
         transform.GetChild(0).GetComponent<Image>().DOFade(1, fadeDuration);
         transform.GetChild(1).GetComponent<Image>().DOFade(1, fadeDuration).OnComplete(() => viewPort.SetActive(true));
     }
