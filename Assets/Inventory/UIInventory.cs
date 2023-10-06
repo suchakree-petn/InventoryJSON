@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 
 public abstract class UIInventory : MonoBehaviour
@@ -26,6 +27,15 @@ public abstract class UIInventory : MonoBehaviour
 
     [Header("Prefab")]
     [SerializeField] private GameObject slotPrefab;
+
+    [Header("Animation")]
+    [SerializeField] private float spawnScaleDuration;
+    [SerializeField] private float spawnScaleBump;
+    [SerializeField] private float bumpScaleDuration;
+    [SerializeField] private float spawnDelayDuration;
+    [SerializeField] private float fadeDuration;
+    [SerializeField] private AnimationCurve spawnCurve;
+    [SerializeField] private AnimationCurve bumpCurve;
 
     public delegate void SlotActions(Item item);
     public static SlotActions OnSlotClick;
@@ -83,35 +93,45 @@ public abstract class UIInventory : MonoBehaviour
         // Create new slot
         UISlot = GetItemListByType(item._itemType);
         GetpriceNow = item._price;
-       // Debug.Log(item._price);//Price now
+        // Debug.Log(item._price);//Price now
 
         // Enable description
         InitDescriptionUI();
 
-        // Refresh to show current select item info
-        Debug.Log("refresh data");
-        // RefreshUIInventory(_currentSelectItem);
-        //Debug.Log(priceNow);
     }
 
     public List<GameObject> GetItemListByType(ItemType itemType)
     {
         List<GameObject> _UISlot = new();
         SlotItem firstItemInSlot = null;
-        if(_slotItem.Count ==0){
+        if (_slotItem.Count == 0)
+        {
             Debug.Log("slot item: 0");
         }
+        Sequence mainSequence = DOTween.Sequence();
+
         for (int i = 0; i < _slotItem.Count; i++)
         {
-
-            if (_slotItem[i].item._itemType == itemType)
+            int index = i;
+            if (_slotItem[index].item._itemType == itemType)
             {
                 if (firstItemInSlot == null)
                 {
-                    firstItemInSlot = _slotItem[i];
+                    firstItemInSlot = _slotItem[index];
                 }
-                GameObject slot = CreateUISlot(_slotItem[i]);
+                GameObject slot = CreateUISlot(_slotItem[index]);
                 _UISlot.Add(slot);
+                mainSequence.AppendCallback(() =>
+                {
+                    Sequence subSequence = DOTween.Sequence();
+                    slot.GetComponent<Image>().DOFade(1, fadeDuration);
+                    slot.transform.GetChild(0).GetComponent<Image>().DOFade(1, fadeDuration);
+                    slot.transform.GetChild(1).GetComponent<Image>().DOFade(1, fadeDuration);
+                    subSequence.Append(slot.transform.DOScale(spawnScaleBump, spawnScaleDuration)).SetEase(spawnCurve);
+                    subSequence.Append(slot.transform.DOScale(1, bumpScaleDuration)).SetEase(bumpCurve);
+                });
+                mainSequence.AppendInterval(spawnDelayDuration);
+
             }
         }
 
@@ -124,8 +144,8 @@ public abstract class UIInventory : MonoBehaviour
         {
             _currentSelectItem = firstItemInSlot.item;
         }
-        
-        
+
+
         Debug.Log(_UISlot.Count);
         return _UISlot;
     }
@@ -146,7 +166,6 @@ public abstract class UIInventory : MonoBehaviour
 
     private void RefreshUIInventory(Item currentSelectItem)
     {
-        Debug.Log("refresh ui");
         RefreshDescriptionName(currentSelectItem);
         RefreshDescriptionIcon(currentSelectItem);
         RefreshDescriptionText(currentSelectItem);

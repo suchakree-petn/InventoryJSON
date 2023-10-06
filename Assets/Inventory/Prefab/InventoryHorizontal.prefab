@@ -2651,9 +2651,59 @@ MonoBehaviour:
   _inventoryContentTransform: {fileID: 1899687991419894956}
   _descriptionContentTransform: {fileID: 1899687990674995469}
   slotPrefab: {fileID: 1330488598094877409, guid: cb34af654efd68c49bfe456ee3f4bf39, type: 3}
+  spawnScaleDuration: 0.3
+  spawnScaleBump: 1.2
+  bumpScaleDuration: 0.2
+  spawnDelayDuration: 0.1
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  bumpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   _slotItem: []
-  _money: 0
-  showMoney: {fileID: 1899687992094571943}
   UIInventoryHorizontalPrefab: {fileID: 1899687992278505817}
 --- !u!1 &1899687992286123081
 GameObject:

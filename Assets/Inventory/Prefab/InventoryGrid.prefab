@@ -33,9 +33,9 @@ RectTransform:
   m_Father: {fileID: 4420004586529550750}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 220, y: -417.6907}
   m_SizeDelta: {x: 439.78, y: 213.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8362961522113800834
@@ -795,9 +795,9 @@ RectTransform:
   m_Father: {fileID: 4420004586529550750}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 220, y: -180.12036}
   m_SizeDelta: {x: 439.7771, y: 221.6407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5659993328374522502
@@ -1187,9 +1187,9 @@ RectTransform:
   m_Father: {fileID: 4420004586529550750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 220, y: -24.65}
   m_SizeDelta: {x: 439.78, y: 49.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5579093277829230777
@@ -1839,9 +1839,60 @@ MonoBehaviour:
   _inventoryContentTransform: {fileID: 494399276513051951}
   _descriptionContentTransform: {fileID: 4420004586529550750}
   slotPrefab: {fileID: 1330488598094877409, guid: cb34af654efd68c49bfe456ee3f4bf39, type: 3}
+  spawnScaleDuration: 0.3
+  spawnScaleBump: 1.2
+  bumpScaleDuration: 0.2
+  spawnDelayDuration: 0.1
+  fadeDuration: 0.5
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  bumpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   _slotItem: []
-  _money: 0
-  showMoney: {fileID: 8398289466981894239}
   UIInventoryHorizontalPrefab: {fileID: 6507464422650086791}
 --- !u!1 &7782622024179352583
 GameObject:
@@ -1876,9 +1927,9 @@ RectTransform:
   m_Father: {fileID: 4420004586529550750}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 220, y: -567.74066}
   m_SizeDelta: {x: 439.2, y: 46.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8896546090087167325
