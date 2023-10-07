@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Rare Scroll
   _description: Increase 500 exp.
-  _icon: {fileID: 21300000, guid: 342a1021d50ec164bb265ec5c563c742, type: 3}
+  _icon: STAFFS 11
   _itemType: 2
   _itemRarity: 1
   _maxStackCount: 99
+  stackCount: 1
   _price: 2
-  itemPrefab: {fileID: 0}
   _expAmount: 500

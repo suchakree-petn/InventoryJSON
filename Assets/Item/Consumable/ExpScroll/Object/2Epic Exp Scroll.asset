@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Epic Scroll
   _description: Increase 1500 exp.
-  _icon: {fileID: 21300000, guid: 49b5be17e692bfd429c0035e39d5df2f, type: 3}
+  _icon: STAFFS 12
   _itemType: 2
   _itemRarity: 2
   _maxStackCount: 99
+  stackCount: 1
   _price: 3
-  itemPrefab: {fileID: 0}
   _expAmount: 1500

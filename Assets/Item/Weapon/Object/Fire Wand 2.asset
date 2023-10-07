@@ -15,12 +15,13 @@ MonoBehaviour:
   _name: Staff
   _description: ' When attack, has 15% Chance to bounds enemies for 10 seconds. (Bounded
     enemies will receive 50% of main target receive damage)'
-  _icon: {fileID: 1051712074, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
+  _icon: STAFFS_30
+  _iconTxt: STAFFS_35
   _itemType: 1
   _itemRarity: 3
   _maxStackCount: 0
+  stackCount: 1
   _price: 300
-  itemPrefab: {fileID: 0}
   elementalType: 1
   fireDelay: 0
   _baseSkillDamageMultiplier: 0

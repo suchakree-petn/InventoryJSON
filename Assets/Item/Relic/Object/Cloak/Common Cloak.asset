@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Common Cloak
   _description: Reduce Incoming Damage by 6%
-  _icon: {fileID: 1478834283, guid: 049bf67a28ca03242b7fdbaa9aa03d88, type: 3}
+  _icon: STAFFS_11
   _itemType: 3
   _itemRarity: 0
   _maxStackCount: 1
+  stackCount: 1
   _price: 77
-  itemPrefab: {fileID: 0}
   _relicPart: 2
   _bonusAttack: 0.08
   _BonusHp: 0.24

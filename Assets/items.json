@@ -1,0 +1,302 @@
+[
+    {
+      "_name": "Staff",
+      "_description": "When attack, has 40% chance to Frozen the enemy for 3 second. (Frozen enemy can not move)",
+      "_icon": "STAFFS_0",
+      "_itemType": 1,
+      "_itemRarity": 0,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 200
+    },
+    {
+      "_name": "Staff",
+      "_description": "Create fire ring around the Caster.",
+      "_icon": "STAFFS_35",
+      "_itemType": 1,
+      "_itemRarity": 0,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 500
+    },
+    {
+      "_name": "Common Fire Necklace",
+      "_description": "Increase Fire Elemental Bonus Damage.",
+      "_icon": "STAFFS_10",
+      "_itemType": 3,
+      "_itemRarity": 0,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 135
+    },
+    {
+      "_name": "Common Frost Necklace",
+      "_description": "Increase Frost Elemental Bonus Damage.",
+      "_icon": "STAFFS_10",
+      "_itemType": 3,
+      "_itemRarity": 0,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 7
+    },
+    {
+      "_name": "Common Thunder Necklace",
+      "_description": "Increase Thunder Elemental Bonus Damage.",
+      "_icon": "STAFFS_10",
+      "_itemType": 3,
+      "_itemRarity": 0,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 97
+    },
+    {
+      "_name": "Epic Fire Necklace",
+      "_description": "Increase Fire Elemental Bonus Damage. After Skill Deal Damage Create Shockwave.(Shockwave Deal AOE Fire Elemental Damage 12% of ATK)",
+      "_icon": "STAFFS_18",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 579
+    },
+    {
+      "_name": "Epic Frost Necklace",
+      "_description": "Increase Frost Elemental Bonus Damage. After Skill Deal Damage Create Shockwave.(Shockwave Deal AOE Frost Elemental Damage 12% of ATK)",
+      "_icon": "STAFFS_20",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 655
+    },
+    {
+      "_name": "Epic Thunder Necklace",
+      "_description": "Increase Thunder Elemental Bonus Damage. After Skill Deal Damage Create Shockwave.(Shockwave Deal AOE Thunder Elemental Damage 12% of ATK)",
+      "_icon": "STAFFS_13",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 8722
+    },
+    {
+      "_name": "Rare Fire Necklace",
+      "_description": "Increase Fire Elemental Bonus Damage. After Attack Create Follow-Up Attack This Effecf Occured Once Every 3 seconds.(Follow-Up Attack Deal Fire Elemental Damage 8% of ATK)",
+      "_icon": "STAFFS_15",
+      "_itemType": 3,
+      "_itemRarity": 1,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 54
+    },
+    {
+      "_name": "Rare Frost Necklace",
+      "_description": "Increase Frost Elemental Bonus Damage. After Attack Create Follow-Up Attack This Effecf Occured Once Every 3 seconds.(Follow-Up Attack Deal Frost Elemental Damage 8% of ATK)",
+      "_icon": "STAFFS_1",
+      "_itemType": 3,
+      "_itemRarity": 1,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 7
+    },
+    {
+      "_name": "Rere Thunder Necklace",
+      "_description": "Increase Thunder Elemental Bonus Damage. After Attack Create Follow-Up Attack This Effecf Occured Once Every 3 seconds.(Follow-Up Attack Deal Thunder Elemental Damage 8% of ATK)",
+      "_icon": "STAFFS_30",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 9
+    },
+    {
+      "_name": "Common Ring",
+      "_description": "Increase Mana Regeneration by 4%.",
+      "_icon": "STAFFS_30",
+      "_itemType": 3,
+      "_itemRarity": 0,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 4
+    },
+    {
+      "_name": "Rare Fire Ring",
+      "_description": "Increase Mana Regeneration by 8%. After Use Skill Mobility Incease Fire Elemental Bonus Damage by 8%.",
+      "_icon": "STAFFS_35",
+      "_itemType": 3,
+      "_itemRarity": 1,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 11
+    },
+    {
+      "_name": "Rare Frost Ring",
+      "_description": "Increase Mana Regeneration by 8%. After Use Skill Mobility Incease Frost Elemental Bonus Damage by 8%.",
+      "_icon": "STAFFS_30",
+      "_itemType": 3,
+      "_itemRarity": 1,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 778
+    },
+    {
+      "_name": "Rare Thunder Ring",
+      "_description": "Increase Mana Regeneration by 8%. After Use Skill Mobility Incease Thunder Elemental Bonus Damage by 8%.",
+      "_icon": "STAFFS_31",
+      "_itemType": 3,
+      "_itemRarity": 1,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 770
+    },
+    {
+      "_name": "Rare Fire Ring",
+      "_description": "Increase Mana Regeneration by 12%. After Use Skill Mobility Incease Fire Elemental Bonus Damage by 16%.",
+      "_icon": "STAFFS_31",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 543
+    },
+    {
+      "_name": "Rare Frost Ring",
+      "_description": "Increase Mana Regeneration by 12%. After Use Skill Mobility Incease Frost Elemental Bonus Damage by 16%.",
+      "_icon": "STAFFS_32",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 2135
+    },
+    {
+      "_name": "Rare Thunder Ring",
+      "_description": "Increase Mana Regeneration by 12%. After Use Skill Mobility Incease Thunder Elemental Bonus Damage by 16%.",
+      "_icon": "STAFFS_31",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 353
+    },
+    {
+      "_name": "Common Cloak",
+      "_description": "Reduce Incoming Damage by 6%",
+      "_icon": "STAFFS_11",
+      "_itemType": 3,
+      "_itemRarity": 0,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 77
+    },
+    {
+      "_name": "Rare Cloak",
+      "_description": "Reduce Incoming Damage by 8%.Increase Movement Speed by 8%",
+      "_icon": "STAFFS_13",
+      "_itemType": 3,
+      "_itemRarity": 1,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 100
+    },
+    {
+      "_name": "Epic Cloak",
+      "_description": "Reduce Incoming Damage by 6%. Create Barrier 10% of MaxHp. This Effect Reset Every 20 Seconds.",
+      "_icon": "STAFFS_12",
+      "_itemType": 3,
+      "_itemRarity": 2,
+      "_maxStackCount": 1,
+      "stackCount": 1,
+      "_price": 99
+    },
+    {
+      "_name": "Staff",
+      "_description": " When attack, has 15% Chance to bounds enemies for 10 seconds. (Bounded enemies will receive 50% of main target receive damage)",
+      "_icon": "STAFFS_30",
+      "_itemType": 1,
+      "_itemRarity": 3,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 300
+    },
+    {
+      "_name": "Staff",
+      "_description": "10% Chance to summon a Soul Servant when attack",
+      "_icon": "STAFFS_1",
+      "_itemType": 1,
+      "_itemRarity": 2,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 100
+    },
+    {
+      "_name": "Staff",
+      "_description": "Chain shock enemies up to 10 times and has 20% chance to paralyzed (Can't attack)",
+      "_icon": "STAFFS_2",
+      "_itemType": 1,
+      "_itemRarity": 2,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 1
+    },
+    {
+      "_name": "Staff",
+      "_description": "Summon a tornado",
+      "_icon": "STAFFS_3",
+      "_itemType": 1,
+      "_itemRarity": 2,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 2
+    },
+    {
+      "_name": "Staff",
+      "_description": "When attack hit enemy, has 30% chance to create a vortex to pull nearby enemies",
+      "_icon": "STAFFS_4",
+      "_itemType": 1,
+      "_itemRarity": 1,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 3
+    },
+    {
+      "_name": "Staff",
+      "_description": "When attack hits enemy, has 50% chance to summon a flame geyser from the sky on a random enemy in sight.",
+      "_icon": "STAFFS_5",
+      "_itemType": 1,
+      "_itemRarity": 2,
+      "_maxStackCount": 0,
+      "stackCount": 1,
+      "_price": 7
+    },
+    {
+      "_name": "Common Scroll",
+      "_description": "Increase 100 exp.",
+      "_icon": "STAFFS_10",
+      "_itemType": 2,
+      "_itemRarity": 0,
+      "_maxStackCount": 99,
+      "stackCount": 1,
+      "_price": 1
+    },
+    {
+      "_name": "Rare Scroll",
+      "_description": "Increase 500 exp.",
+      "_icon": "STAFFS_11",
+      "_itemType": 2,
+      "_itemRarity": 1,
+      "_maxStackCount": 99,
+      "stackCount": 1,
+      "_price": 2
+    },
+    {
+      "_name": "Epic Scroll",
+      "_description": "Increase 1500 exp.",
+      "_icon": "STAFFS_12",
+      "_itemType": 2,
+      "_itemRarity": 2,
+      "_maxStackCount": 99,
+      "stackCount": 1,
+      "_price": 3
+    }
+  ]

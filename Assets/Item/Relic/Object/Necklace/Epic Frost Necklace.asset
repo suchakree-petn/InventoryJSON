@@ -15,12 +15,12 @@ MonoBehaviour:
   _name: Epic Frost Necklace
   _description: Increase Frost Elemental Bonus Damage. After Skill Deal Damage Create
     Shockwave.(Shockwave Deal AOE Frost Elemental Damage 12% of ATK)
-  _icon: {fileID: -29925374, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
+  _icon: STAFFS_20
   _itemType: 3
   _itemRarity: 2
   _maxStackCount: 1
+  stackCount: 1
   _price: 655
-  itemPrefab: {fileID: 0}
   _relicPart: 0
   _bonusAttack: 0.24
   _elementalBonusDamage: 0.18

@@ -15,12 +15,12 @@ MonoBehaviour:
   _name: Epic Fire Necklace
   _description: Increase Fire Elemental Bonus Damage. After Skill Deal Damage Create
     Shockwave.(Shockwave Deal AOE Fire Elemental Damage 12% of ATK)
-  _icon: {fileID: 1629974370, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
+  _icon: STAFFS_18
   _itemType: 3
   _itemRarity: 2
   _maxStackCount: 1
+  stackCount: 1
   _price: 579
-  itemPrefab: {fileID: 0}
   _relicPart: 0
   _bonusAttack: 0.24
   _elementalBonusDamage: 0.18
