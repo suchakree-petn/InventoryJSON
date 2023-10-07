@@ -15,12 +15,12 @@ MonoBehaviour:
   _name: Epic Cloak
   _description: Reduce Incoming Damage by 6%. Create Barrier 10% of MaxHp. This Effect
     Reset Every 20 Seconds.
-  _icon: {fileID: 2073568825, guid: 049bf67a28ca03242b7fdbaa9aa03d88, type: 3}
+  _icon: STAFFS_12
   _itemType: 3
   _itemRarity: 2
   _maxStackCount: 1
+  stackCount: 1
   _price: 99
-  itemPrefab: {fileID: 0}
   _relicPart: 2
   _bonusAttack: 0.16
   _BonusHp: 0.48

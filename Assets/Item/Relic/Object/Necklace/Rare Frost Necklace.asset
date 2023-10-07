@@ -16,12 +16,12 @@ MonoBehaviour:
   _description: Increase Frost Elemental Bonus Damage. After Attack Create Follow-Up
     Attack This Effecf Occured Once Every 3 seconds.(Follow-Up Attack Deal Frost
     Elemental Damage 8% of ATK)
-  _icon: {fileID: -1328399158, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
+  _icon: STAFFS_1
   _itemType: 3
   _itemRarity: 1
   _maxStackCount: 1
+  stackCount: 1
   _price: 7
-  itemPrefab: {fileID: 0}
   _relicPart: 0
   _bonusAttack: 0.18
   _elementalBonusDamage: 0.12

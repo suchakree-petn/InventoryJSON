@@ -22,14 +22,16 @@ public class Item : ScriptableObject
     public string _name;
     [TextArea(4,6)]
     public string _description;
-    public Sprite _icon;
+    public string _icon;
     public ItemType _itemType;
     public ItemRarity _itemRarity;
-    public int _maxStackCount;
+    public int _maxStackCount = 10;
+    public int stackCount = 1;
     public int _price;
+    
 
-    [Header("Prefab")]
-    public GameObject itemPrefab;
+    //[Header("Prefab")]
+    //public GameObject itemPrefab;
 
     void Awake()
     {

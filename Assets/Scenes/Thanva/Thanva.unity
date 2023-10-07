@@ -2371,6 +2371,8 @@ MonoBehaviour:
     stackCount: 17
     maxStackCount: 99
   _maxSlot: 55
+  _money: 0
+  ShowMoneyMain: {fileID: 0}
 --- !u!114 &2060194397
 MonoBehaviour:
   m_ObjectHideFlags: 0

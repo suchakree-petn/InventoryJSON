@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Staff
   _description: Summon a tornado
-  _icon: {fileID: 1633849522, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
+  _icon: STAFFS_3
   _itemType: 1
   _itemRarity: 2
   _maxStackCount: 0
+  stackCount: 1
   _price: 2
-  itemPrefab: {fileID: 0}
   elementalType: 3
   fireDelay: 0
   _baseSkillDamageMultiplier: 0

@@ -626,6 +626,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364402372}
   m_CullTransparentMesh: 1
+--- !u!1 &433942388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433942390}
+  - component: {fileID: 433942389}
+  - component: {fileID: 433942391}
+  m_Layer: 0
+  m_Name: InventoryManager_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &433942389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433942388}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c266248c0c5a044587cf7bade13ab8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDatabase: {fileID: 11400000, guid: f3852ea5a6d82c14cb4bf43f5498765c, type: 2}
+--- !u!4 &433942390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433942388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9113861, y: 0.016392969, z: 0.028499655}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &433942391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433942388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88e6c68c870f7841a279a5fbcc1d681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScoreList: []
+  savePath: 
+  onlineLoadPath: https://drive.google.com/uc?export=download&id=1jtV6yPpHTPqBnK9dy8Y1X3kRnNCJntig
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,97 +2371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allInventoryType: []
-  itemList:
-  - item: {fileID: 11400000, guid: 81df947e082258c47abe67f586fb48a2, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 622080370297c0d4eb1bb811a0b91086, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: b3385620bcf517547b4767da9bc7f094, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 548d01dae413ebc4b89b5e8c542382ba, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: ae4d6a912402b82499d3d93e6b9f9b64, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 52bc99ed2e2e44542b1dd8c7f95406da, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 3e44f0fe01648774eaa4d03c6dfc71e9, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: fcf2df55988febc4ea4d9ca019dfab58, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 798af0ee9329de24eafbe734b59b6c45, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 87db27b02d663074f8b5cccedc5a9603, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 4087f5cba35fed74c91a9666a145a414, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: ff14e01b912485f41a4dfb66e5eb2ee3, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: cfabef08946f8c045b6951ead430faa7, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 0d9cea05c78c09e4bbfc85b7388fca24, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 9d44a93713265584ca15fbc9b929d6f6, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: f8456e3ae130b4047a616e0ca5fe1bb1, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 0148b9f15a9d6924285c6d0fc2d8c672, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 2e23d5bd406a70642b3652344b97aedc, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 5c87514f86fc2a146a7c65dab0aea60d, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 751e56cc8a907a847b6f319a1cebd383, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 54049288bc25bce47b4a952b6fdddbbe, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 7bb67105825eec042a4f51c5ee859e24, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 2e635394851b4754ab178bc7d21a7f57, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 9171432c99621bc47b83ed988b4d5083, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: b5d062111d02e5741b80383bd255ed09, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: ba159705f17cc3b4db863fe673a8847f, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: ed8cfbfe14a714c4f928f8aeb0d890ae, type: 2}
-    stackCount: 1
-    maxStackCount: 1
-  - item: {fileID: 11400000, guid: 560d4d2d23883e440814654e4dcabdca, type: 2}
-    stackCount: 69
-    maxStackCount: 99
-  - item: {fileID: 11400000, guid: 7c64e24a722cadf4792dde383e9250f3, type: 2}
-    stackCount: 48
-    maxStackCount: 99
-  - item: {fileID: 11400000, guid: ef0e47600cc2b074aa06d43a24080b95, type: 2}
-    stackCount: 17
-    maxStackCount: 99
+  itemList: []
   _maxSlot: 55
   _money: 0
   ShowMoneyMain: {fileID: 2089214317}

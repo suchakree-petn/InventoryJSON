@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Rare Cloak
   _description: Reduce Incoming Damage by 8%.Increase Movement Speed by 8%
-  _icon: {fileID: -1198409447, guid: 049bf67a28ca03242b7fdbaa9aa03d88, type: 3}
+  _icon: STAFFS_13
   _itemType: 3
   _itemRarity: 1
   _maxStackCount: 1
+  stackCount: 1
   _price: 100
-  itemPrefab: {fileID: 0}
   _relicPart: 2
   _bonusAttack: 0.12
   _BonusHp: 0.36

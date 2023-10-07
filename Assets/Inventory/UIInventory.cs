@@ -11,6 +11,8 @@ public abstract class UIInventory : MonoBehaviour
     public List<GameObject> UISlot;
     public Item _currentSelectItem;
 
+    public static UIInventory instance;
+
 
 
     [Header("Description Panel")]
@@ -38,6 +40,11 @@ public abstract class UIInventory : MonoBehaviour
     [Header("For sent price to any class")]
     public static int GetpriceNow;
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
 
     private void Start()
     {
@@ -54,11 +61,22 @@ public abstract class UIInventory : MonoBehaviour
 
 
     }
+
     private GameObject CreateUISlot(SlotItem slotItem)
     {
         GameObject slot = Instantiate(slotPrefab, _inventoryContentTransform);
         slot.GetComponent<UISlotData>().item = slotItem.item;
-        slot.transform.GetChild(0).GetComponent<Image>().sprite = slotItem.item._icon;
+        Sprite loadedSprite = Resources.Load<Sprite>(slotItem.item._icon);
+        if (loadedSprite != null)
+        {
+            slot.transform.GetChild(0).GetComponent<Image>().sprite = loadedSprite;
+        }
+        else
+        {
+            Debug.LogError("Failed to load sprite from path: " + slotItem.item._icon);
+        }
+
+        Debug.Log(slotItem.item._icon);
         slot.transform.GetChild(1).GetComponentInChildren<TextMeshProUGUI>().text = slotItem.stackCount.ToString();
         return slot;
     }
@@ -90,7 +108,7 @@ public abstract class UIInventory : MonoBehaviour
 
         // Refresh to show current select item info
         Debug.Log("refresh data");
-        // RefreshUIInventory(_currentSelectItem);
+        //RefreshUIInventory(_currentSelectItem);
         //Debug.Log(priceNow);
     }
 
@@ -144,7 +162,7 @@ public abstract class UIInventory : MonoBehaviour
         }
     }
 
-    private void RefreshUIInventory(Item currentSelectItem)
+    public void RefreshUIInventory(Item currentSelectItem)
     {
         Debug.Log("refresh ui");
         RefreshDescriptionName(currentSelectItem);
@@ -163,9 +181,33 @@ public abstract class UIInventory : MonoBehaviour
     {
         if (item != null)
         {
-            _descriptionIcon.sprite = item._icon;
+            /*
+            if (item._icon != null)
+            {
+                _descriptionIcon.sprite = item._icon;
+            }*/
+            if (item._icon != null)
+            {
+                Sprite loadedSprite = Resources.Load<Sprite>(item._icon);
+
+                if (loadedSprite != null)
+                {
+                    _descriptionIcon.sprite = loadedSprite;
+                }
+                else
+                {
+                    Debug.LogWarning("Icon not found for item: " + item._icon);
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Item's icon path is null.");
+            }
+
+
         }
     }
+
 
     private void RefreshDescriptionText(Item item)
     {

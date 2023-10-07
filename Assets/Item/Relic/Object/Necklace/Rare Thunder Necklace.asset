@@ -16,12 +16,12 @@ MonoBehaviour:
   _description: Increase Thunder Elemental Bonus Damage. After Attack Create Follow-Up
     Attack This Effecf Occured Once Every 3 seconds.(Follow-Up Attack Deal Thunder
     Elemental Damage 8% of ATK)
-  _icon: {fileID: -511732043, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
+  _icon: STAFFS_30
   _itemType: 3
   _itemRarity: 2
   _maxStackCount: 1
+  stackCount: 1
   _price: 9
-  itemPrefab: {fileID: 0}
   _relicPart: 0
   _bonusAttack: 0.18
   _elementalBonusDamage: 0.12

@@ -26,7 +26,35 @@ public class InventorySystem : MonoBehaviour
         ShowMoneyMain.text = _money + "";
     }
 
-    
+    void Start()
+    {
+        // assuming you want to populate the inventory at the start
+        PopulateInventoryWithLoadedData();
+    }
+
+    public void PopulateInventoryWithLoadedData()
+    {
+        List<Item> loadedData = LoadToshow.instance.GetLoadedPlayerScoreList();
+        Debug.Log(loadedData.Count);
+        
+        foreach (Item item in loadedData)
+        {
+            AddSlotItemToInventory(item, 1);
+            //Debug.Log(item._icon);
+            //UIInventory.instance.RefreshUIInventory(item);
+        }
+
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PopulateInventoryWithLoadedData();
+        }
+    }
+
+
     public void BuyItem()
     {
         int priceItem = UIInventory.GetpriceNow;
@@ -67,6 +95,27 @@ public class InventorySystem : MonoBehaviour
             amount = 0;
         }
     }
+
+    public SlotItem CreateSlotItem(Item item, int amount)
+    {
+        int maxStack = item._maxStackCount;  // Assuming the Item class has a _maxStackCount field.
+        SlotItem newSlotItem = new SlotItem(item, amount, maxStack);
+
+        return newSlotItem;
+    }
+
+    public void AddSlotItemToInventory(Item item, int amount)
+    {
+        if (itemList.Count < _maxSlot)
+        {
+            SlotItem slotItem = CreateSlotItem(item, amount);
+            itemList.Add(slotItem);
+        }
+        else
+        {
+            Debug.Log("Inventory full. Cannot add new slot item.");
+        }
+    }
     public void Remove(Item item, int amount)
     {
         foreach (SlotItem slot in itemList)
@@ -85,6 +134,8 @@ public class InventorySystem : MonoBehaviour
             }
         }
     }
+
+
 }
 [System.Serializable]
 public class SlotItem

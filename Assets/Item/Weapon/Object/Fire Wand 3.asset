@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Staff
   _description: 10% Chance to summon a Soul Servant when attack
-  _icon: {fileID: 1880148330, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
+  _icon: STAFFS_1
   _itemType: 1
   _itemRarity: 2
   _maxStackCount: 0
+  stackCount: 1
   _price: 100
-  itemPrefab: {fileID: 0}
   elementalType: 2
   fireDelay: 0
   _baseSkillDamageMultiplier: 0
