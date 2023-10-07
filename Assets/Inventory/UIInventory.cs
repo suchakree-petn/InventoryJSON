@@ -68,7 +68,7 @@ public abstract class UIInventory : MonoBehaviour
             Debug.Log("No item in list");
         }
         Sequence sequence = DOTween.Sequence();
-        sequence.AppendInterval(1.1f);
+        sequence.AppendInterval(1.5f);
         sequence.AppendCallback(() =>
         {
             Debug.Log("Refresh");
