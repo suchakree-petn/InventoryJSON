@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Epic Scroll
   _description: Increase 1500 exp.
-  _icon: STAFFS_12
+  _icon: STAFFS 12
   _itemType: 2
   _itemRarity: 2
   _maxStackCount: 99

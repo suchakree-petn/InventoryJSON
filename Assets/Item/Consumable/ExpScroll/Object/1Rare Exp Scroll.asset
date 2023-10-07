@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Rare Scroll
   _description: Increase 500 exp.
-  _icon: STAFFS_11
+  _icon: STAFFS 11
   _itemType: 2
   _itemRarity: 1
   _maxStackCount: 99

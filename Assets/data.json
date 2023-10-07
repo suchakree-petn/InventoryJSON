@@ -282,7 +282,7 @@
     {
       "_name": "Rare Scroll",
       "_description": "Increase 500 exp.",
-      "_icon": "11",
+      "_icon": "STAFFS_11",
       "_itemType": 2,
       "_itemRarity": 1,
       "_maxStackCount": 99,
@@ -292,7 +292,7 @@
     {
       "_name": "Epic Scroll",
       "_description": "Increase 1500 exp.",
-      "_icon": "12",
+      "_icon": "STAFFS_12",
       "_itemType": 2,
       "_itemRarity": 2,
       "_maxStackCount": 99,

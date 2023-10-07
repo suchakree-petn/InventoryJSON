@@ -7,6 +7,7 @@ using DG.Tweening;
 public class InventorySystem : MonoBehaviour
 {
     public static InventorySystem Instance;
+    public GameObject picLoad;
     [SerializeField] private List<UIInventory> allInventoryType = new();
     public List<SlotItem> itemList = new List<SlotItem>();
     public int _maxSlot;
@@ -29,11 +30,12 @@ public class InventorySystem : MonoBehaviour
     void Start()
     {
         // assuming you want to populate the inventory at the start
-        PopulateInventoryWithLoadedData();
+        //PopulateInventoryWithLoadedData();
     }
 
     public void PopulateInventoryWithLoadedData()
     {
+        StartCoroutine(ExampleCoroutine());
         List<Item> loadedData = LoadToshow.instance.GetLoadedPlayerScoreList();
         Debug.Log(loadedData.Count);
         
@@ -44,6 +46,13 @@ public class InventorySystem : MonoBehaviour
             //UIInventory.instance.RefreshUIInventory(item);
         }
 
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        picLoad.SetActive(true);
+        yield return new WaitForSeconds(3);
+        picLoad.SetActive(false);
     }
 
     private void Update()
